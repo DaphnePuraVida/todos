@@ -2,6 +2,7 @@ import * as React from "react";
 import "./ToDoApp.css";
 import { ToDoListBlock } from "./ToDoListBlock";
 
+
 export const ToDoApp = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ export const ToDoApp = () => {
       </div>
       <div>
         <ToDoListBlock />
+        
       </div>
     </div>
   );
