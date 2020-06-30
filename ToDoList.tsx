@@ -23,11 +23,18 @@ const todos: TodoType[] = [
   },
 ];
 
+
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+};
+
 export const ToDoList = () => {
   return (
-    <div className="TodoItem">
+    
+    <div className="TodoItem" id="demo" onclick={ myFunction}>
       {todos.map((todoItem) => {
-        return <div>{todoItem.text}</div>;
+        return <div>{todoItem.text}
+        </div>;
       })}
     </div>
   );
